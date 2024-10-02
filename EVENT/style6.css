@@ -5,35 +5,87 @@ body{
     background-size:cover ;
     background-attachment: fixed;
 }
-#navbar-0{
+/* Basic styles for the navbar */
+#navbar-0 {
     display: flex;
-    background-color: rgb(255, 255, 255);
-    height: 70px;
-    /* justify-content: space-between; */
-  }
-  .menu{
-    margin-left: 250px;
-    margin-top: 0px;
-  }
-  .img-0, .menu{
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff; /* Change as needed */
+}
+
+.img-0 img {
+    height: 70px; /* Logo size */
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* Space between menu items */
+}
+
+.menu li {
     display: inline;
-  
-    
-  }
-  
-  li {
-    display: inline;
-    text-align: center;
-    margin: 10px;
-  }  
-  
-  
-  #links{
+}
+
+#links {
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 5px 10px;
-    font-size: 20px;
-  }
+    color: #333; /* Link color */
+}
+
+/* Media Query for tablets and smaller devices */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Stack the menu items */
+        display: none; /* Initially hide menu */
+        position: absolute; /* Position for dropdown */
+        background-color: #fff; /* Background for dropdown */
+        top: 70px; /* Below the navbar */
+        left: 0;
+        width: 100%; /* Full width */
+    }
+
+    .menu.active {
+        display: flex; /* Show menu when active */
+    }
+
+    #navbar-0 {
+        flex-direction: column; /* Stack logo and menu */
+    }
+
+    .img-0 {
+        margin-bottom: 10px; /* Space between logo and menu */
+    }
+
+    .menu li {
+        margin: 10px 0; /* Space between menu items */
+    }
+}
+
+/* Button for toggling menu visibility on mobile */
+.menu-toggle {
+    display: none; /* Hide by default */
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 480px) {
+    .menu-toggle {
+        display: block; /* Show toggle button */
+        cursor: pointer; /* Pointer on hover */
+        background: none;
+        border: none;
+        font-size: 18px; /* Adjust size as needed */
+    }
+
+    .menu {
+        display: none; /* Hide menu by default */
+    }
+
+    .menu.active {
+        display: flex; /* Show menu when active */
+    }
+}
+
 .h1-4{
     margin: 150px;
     text-align: center;
