@@ -9,6 +9,16 @@ body{
     background-attachment: fixed;
 }
 
+.banner-0{
+    background-color: rgb(253, 237, 199);
+    color: #022716;
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    height: 300px;
+    padding: 120px;
+}
+
 
 /* Basic styles for the navbar */
 #navbar-0 {
@@ -38,62 +48,75 @@ body{
     color: #333; /* Link color */
 }
 
-/* Media Query for tablets and smaller devices */
+
+/* * Media Queries */ 
 @media (max-width: 768px) {
+    /* Stack navbar items on small screens */
     .menu {
-        flex-direction: column; /* Stack the menu items */
-        display: none; /* Initially hide menu */
-        position: absolute; /* Position for dropdown */
-        background-color: #fff; /* Background for dropdown */
-        top: 70px; /* Below the navbar */
-        left: 0;
-        width: 100%; /* Full width */
+        flex-direction: column;
+        align-items: center;
     }
 
-    .menu.active {
-        display: flex; /* Show menu when active */
+    /* Stack buttons vertically */
+    #but-0 {
+        flex-direction: column;
     }
 
-    #navbar-0 {
-        flex-direction: column; /* Stack logo and menu */
+    /* Adjust main header font size */
+    .main1 {
+        font-size: 1.5em;
     }
 
-    .img-0 {
-        margin-bottom: 10px; /* Space between logo and menu */
+    /* Reduce padding and margins */
+    .container, .banner-0 {
+        padding: 10px;
     }
 
-    .menu li {
-        margin: 10px 0; /* Space between menu items */
+    /* Adjust images for smaller screens */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust footer layout */
+    #footer-1 {
+        font-size: 0.9em;
     }
 }
 
-/* Button for toggling menu visibility on mobile */
-.menu-toggle {
-    display: none; /* Hide by default */
-}
-
-/* Media Query for mobile devices */
 @media (max-width: 480px) {
-    .menu-toggle {
-        display: block; /* Show toggle button */
-        cursor: pointer; /* Pointer on hover */
-        background: none;
-        border: none;
-        font-size: 18px; /* Adjust size as needed */
+    /* Further reduce font sizes */
+    .main1 {
+        font-size: 1.2em;
     }
 
-    .menu {
-        display: none; /* Hide menu by default */
+    h2 {
+        font-size: 1em;
     }
 
-    .menu.active {
-        display: flex; /* Show menu when active */
+    /* Smaller button sizes */
+    button {
+        padding: 5px;
+        font-size: 0.8em;
     }
+
+    /* Adjust input field sizes */
+    input, textarea {
+        width: 100%;
+        font-size: 0.9em;
+    }
+}
+
+.h22-2{
+    text-align: center;
+    color: #ffffff ;
 }
 
 #but-0{
     display: flex;
-    margin-left: 390px;
+    margin-left: 250px;
+    justify-content: space-evenly;
+    
 
 
     
@@ -103,17 +126,23 @@ body{
     display: inline;
     border: solid whitesmoke;
     border-radius: 6px;
+    padding: 40px;
+    color: #ffffff;
     
 }
 .but-2{
     display: inline;
     border: solid whitesmoke;
     border-radius: 6px;
+    padding: 40px;
+    color: #ffffff;
 }
 .but-3{
     display: inline;
     border: solid whitesmoke;
     border-radius: 6px;
+    padding: 40px;
+    color: #ffffff;
 
 }
 
@@ -195,7 +224,7 @@ li{
 .h1-2{
     color: white;
 }
-event {
+.event {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
