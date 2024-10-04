@@ -1,122 +1,40 @@
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-}
-/* Basic styles for the navbar */
-#navbar-0 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: #fff; /* Change as needed */
-}
 
-.img-0 img {
-  height: 70px; /* Logo size */
-}
-
-.menu {
-  list-style-type: none;
-  display: flex;
-  gap: 20px; /* Space between menu items */
-}
-
-.menu li {
-  display: inline;
-}
-
-#links {
-  text-decoration: none;
-  color: #333; /* Link color */
-}
-
-/* Media Query for tablets and smaller devices */
-@media (max-width: 768px) {
-  .menu {
-      flex-direction: column; /* Stack the menu items */
-      display: none; /* Initially hide menu */
-      position: absolute; /* Position for dropdown */
-      background-color: #fff; /* Background for dropdown */
-      top: 70px; /* Below the navbar */
-      left: 0;
-      width: 100%; /* Full width */
-  }
-
-  .menu.active {
-      display: flex; /* Show menu when active */
-  }
-
-  #navbar-0 {
-      flex-direction: column; /* Stack logo and menu */
-  }
-
-  .img-0 {
-      margin-bottom: 10px; /* Space between logo and menu */
-  }
-
-  .menu li {
-      margin: 10px 0; /* Space between menu items */
-  }
-}
-
-/* Button for toggling menu visibility on mobile */
-.menu-toggle {
-  display: none; /* Hide by default */
-}
-
-/* Media Query for mobile devices */
-@media (max-width: 480px) {
-  .menu-toggle {
-      display: block; /* Show toggle button */
-      cursor: pointer; /* Pointer on hover */
-      background: none;
-      border: none;
-      font-size: 18px; /* Adjust size as needed */
-  }
-
-  .menu {
-      display: none; /* Hide menu by default */
-  }
-
-  .menu.active {
-      display: flex; /* Show menu when active */
-  }
-}
-
-  
-.img1{
-margin-top: -7px;
-margin-left: -7px;
+.wed-logos{
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-style: normal;
+font-weight: 300;
+color: #231f20;
+line-height: 1.8;
+letter-spacing: 0;
+box-sizing: border-box;
+font-size: 20px;
+list-style-type: none;
+text-align: center;
+margin: 1em 0;
+padding: 2em 0;
+margin-bottom: 80px;
+border: 0;
 display: flex;
+margin-left: 340px;
 }
 
-/* Media Query for Tablets and Smaller Screens */
-@media (max-width: 768px) {
-  .img1 {
-    margin-top: 0;
-    margin-left: 0;
-    justify-content: center;
-    max-width: 90%;
+.hsContent2{
+background-color: rgb(224, 208, 189);
+height: 600px;
+}
+
+/* For laptops and tablets (screens between 768px and 1024px)  */
+@media only screen and (max-width: 1024px) {
+  .wed-logos {
+    font-size: 18px;  
+    margin-left:150px; 
+    display:block;  
   }
-}
 
-/* Media Query for Mobile Devices */
-@media (max-width: 480px) {
-  .img1 {
-    margin-top: 0;
-    margin-left: 0;
-    justify-content: center;
-    max-width: 100%;
-    height: auto;
+  .hsContent2 {
+    height: 500px;  
+    
   }
-}
-
-.nav1{
-background-color:white;
-position:fixed;
-width: 100.5%;
-height: 115px;
 }
 
 .side1 img{
@@ -247,42 +165,6 @@ margin-left: 500px;
   }
 }
 
-.wed-logos{
-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-font-style: normal;
-font-weight: 300;
-color: #231f20;
-line-height: 1.8;
-letter-spacing: 0;
-box-sizing: border-box;
-font-size: 20px;
-list-style-type: none;
-text-align: center;
-margin: 1em 0;
-padding: 2em 0;
-margin-bottom: 80px;
-border: 0;
-display: flex;
-margin-left: 340px;
-}
-
-.hsContent2{
-background-color: rgb(224, 208, 189);
-height: 600px;
-}
-
-/* For laptops and tablets (screens between 768px and 1024px)  */
-@media only screen and (max-width: 1024px) {
-  .wed-logos {
-    font-size: 18px;  
-    margin-left:150px; 
-    display:block;  
-  }
-
-  .hsContent2 {
-    height: 500px;  
-    
-  }
 }
 
 /* For mobile devices (screens below 768px) */
